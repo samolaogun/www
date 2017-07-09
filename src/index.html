@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sam Olaogun</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body>
+    <main>
+        <h3>Hi.</h3>
+        <p>I'm a <i>student</i> and <i>developer</i> working between <i>technology</i> and <i>human-interaction</i>.</p>
+        <p>Lately I've been developing intelligent interfaces with <i>computer vision</i> and ubiquitous technology.</p>
+        <p>Here are some useful links:</p>
+        <ul>
+            <li><a href="/assets/Resume.pdf">Resume</a></li>
+            <li><a href="https://github.com/samolaogun">Github</a></li>
+            <!--<li><a href="blog.samolaogun.com/">Blog</a></li>-->
+        </ul>
+        <p>- Sam <a href="mailto:sam.olaogun@gmail.com?subject=Hello%20there!">(sam.olaogun@gmail.com)</a></p>
+
+        <hr>
+
+        <footer>&copy; Sam Olaogun </footer>
+    </main>
+
+    <script>
+        'use strict';
+
+        const footer = document.querySelector('footer');
+        const year = new Date().getFullYear();
+
+        footer.insertAdjacentHTML('beforeend', year);
+    </script>
+</body>
+
+</html>

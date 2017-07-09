@@ -1,0 +1,81 @@
+* {
+    font: 1rem/1.5 BlinkMacSystemFont, Menlo, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size-adjust: 0.5;
+    vertical-align: baseline;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+:root {
+    --light-yellow: #fff9c6;
+    --aqua-blue: #2ca997;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 24rem;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+a[href^=mailto] {
+    color: #21aedd;
+}
+
+a {
+    color: inherit;
+}
+
+i {
+    background-color: var(--light-yellow);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+li {
+    color: var(--aqua-blue);
+}
+
+li::before {
+    content: " * ";
+    padding-right: .1rem;
+    vertical-align: sub;
+}
+
+footer {
+    color: rgba(0, 0, 0, .4);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+@media only screen and (max-width: 32rem) {
+    body {
+        display: initial;
+    }
+    main {
+        padding: 2rem;
+        width: initial;
+    }
+}

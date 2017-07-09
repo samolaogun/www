@@ -1,0 +1,21 @@
+{
+    "name": "sam-olaogun",
+    "version": "1.0.0",
+    "private": true,
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index",
+        "build": "./node_modules/.bin/gulp"
+    },
+    "author": "Sam Olaogun",
+    "license": "MIT",
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^4.0.0"
+    },
+    "dependencies": {
+        "dotenv": "^4.0.0",
+        "express": "^4.15.3"
+    }
+}
